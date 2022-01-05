@@ -55,7 +55,7 @@ module.exports = {
             provider: () =>
                 new HDWalletProvider(
                     mnemonic,
-                    `https://bsc-dataseed.binance.org/`
+                    `https://bsc-dataseed1.binance.org`
                 ),
             network_id: 56,
             confirmations: 10,
